@@ -1,4 +1,0 @@
-baseURL = 'http://nsivkov.com/'
-languageCode = 'en-us'
-title = "A dev's ramblings on things"
-theme = 'hugo-theme-stack'
