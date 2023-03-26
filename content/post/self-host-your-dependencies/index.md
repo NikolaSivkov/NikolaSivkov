@@ -99,7 +99,15 @@ Here's a couple of options that you can self host.
 
 My personal pick is Inedo's ProGet, since it's free for commercial use, and you have to pay only for the advanced features ( multi node support, ultra fine grained access rules), which you may or may not need, and it has a nice UI to configure everything.
 
+## Assessing risk in software delivery and team workflow
+
+Assessing risk in software delivery and team workflow is a critical aspect of any organization, regardless of its size. Larger organizations typically have more complex systems, with multiple teams working on various aspects of the software lifecycle. This can increase the risk of miscommunication, errors, and potential security vulnerabilities. In contrast, smaller organizations may have simpler systems and fewer teams, which can make it easier to coordinate and manage risk. However, smaller organizations may also lack the resources and expertise to effectively manage risk, making them more vulnerable to potential threats.
+
+The criticality of software delivery and team workflow is another important factor to consider when assessing risk. If software is mission-critical to the organization's operations or directly impacts customer experience, the risk associated with its development and deployment becomes even more significant. In such cases, it is essential to prioritize risk management and invest in measures to reduce the likelihood of errors or security breaches. This may include investing in tools and infrastructure, such as self-hosting dependencies or using third-party registries, to reduce the reliance on external services that may be prone to outages, rate limiting, or other issues.
+
+To effectively assess risk in software delivery and team workflow, organizations should consider both their size and the criticality of the software being developed. By doing so, they can identify potential vulnerabilities and implement measures to minimize risk, ensuring the continued success and stability of their software and systems.
+
 
 ## Conclusion
 
-In conclusion, the recent events surrounding Docker hub and other incidents in the past highlight the importance of taking control of your dependencies and not solely relying on external registries. By self-hosting your dependencies or using a reliable 3rd-party Docker registry or package feed server, you can prevent disruptions to your operations and mitigate potential risks. Weigh the pros and cons of each option and choose the one that best fits your organization's needs and requirements. Remember, taking measures to own your dependencies can save you from potential headaches and ensure the smooth running of your projects.
+In conclusion, the recent events surrounding Docker hub and other incidents in the past highlight the importance of properly assessing the risk and consequences of not taking control of your dependencies and solely relying on external registries. By self-hosting your dependencies or using a reliable 3rd-party Docker registry or package feed server, you can prevent disruptions to your operations and mitigate potential risks. Weigh the pros and cons of each option and choose the one that best fits your organization's needs and requirements. Remember, taking measures to own your dependencies can save you from potential headaches and ensure the smooth running of your projects.
