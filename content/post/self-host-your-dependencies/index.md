@@ -1,6 +1,6 @@
 ---
 title: "Safeguard Your Dependencies: Why You Should Self-Host and Your Options"
-date: 2023-03-27T09:00:50+02:00
+date: 2023-03-27T00:00:00+02:00
 draft: false
 ---
 
