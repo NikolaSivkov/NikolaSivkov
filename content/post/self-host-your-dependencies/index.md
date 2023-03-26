@@ -1,17 +1,20 @@
 ---
-title: "Self host your dependencies"
-date: 2023-03-14T09:03:20-08:00
-draft: true
+title: "Safeguard Your Dependencies: Why You Should Self-Host and Your Options"
+date: 2023-03-27T09:00:50+02:00
+draft: false
 ---
 
 ## Docker hub is no more
 
 Yes, the title is clickbaity.
 
-As you [may have heard](https://blog.alexellis.io/docker-is-deleting-open-source-images/), Docker the company, decided to purge open source docker hub images, unless the OSS maintainers pay them $420 a year if they want to keep their OSS images available on the hub.
+As you [may have heard](https://blog.alexellis.io/docker-is-deleting-open-source-images/), Docker the company, ~~decided~~ [un-decided](https://www.docker.com/blog/no-longer-sunsetting-the-free-team-plan/) to purge open source docker hub images, unless the OSS maintainers pay them $420 a year if they want to keep their OSS images available on the hub.
 
 Bonkers, right?  
 Yes.
+
+The unfortunate thing is, this is not the first time something like this has happened. One day everything is fine, and on the next, every DevOps person scrambles to fix broken pipelines due to a missing package like [NPM's pad-left incident](https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code). Or NuGet/Npm/Docker/etc is down due to certificate expiration, networking outage, blown up disk and the likes. Incidents where a critical infrastructure that a major part of your company's operations depend on, stops working or is completely gone.
+
 
 ## YIKES!
 
@@ -27,7 +30,7 @@ That's simple - own your dependencies (not just Docker images) and stop dependin
 
 Because bad things _can_ happen if you don't. You should host all your packages & dependencies regardless of the current situation with Docker hub.
 
-What happens if `package name` disappears tomorrow like [NPM's pad-left incident](https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code) ?
+What happens if `package name` disappears tomorrow like NPM's pad-left incident ?
 
 What happens if a dependency gets re-published with malicious code under the same version?
 
@@ -95,3 +98,8 @@ Here's a couple of options that you can self host.
 * <https://jfrog.com/artifactory/>
 
 My personal pick is Inedo's ProGet, since it's free for commercial use, and you have to pay only for the advanced features ( multi node support, ultra fine grained access rules), which you may or may not need, and it has a nice UI to configure everything.
+
+
+## Conclusion
+
+In conclusion, the recent events surrounding Docker hub and other incidents in the past highlight the importance of taking control of your dependencies and not solely relying on external registries. By self-hosting your dependencies or using a reliable 3rd-party Docker registry or package feed server, you can prevent disruptions to your operations and mitigate potential risks. Weigh the pros and cons of each option and choose the one that best fits your organization's needs and requirements. Remember, taking measures to own your dependencies can save you from potential headaches and ensure the smooth running of your projects.
